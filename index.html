@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta charset='utf-8' />
+    <title>KeyShotXR</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <style>
+      body { margin: 0; background-color: #ffffff; }
+      #KeyShotXR { width: 100%; height: 100vh; }
+    </style>
+    <script type="text/javascript" src="js/KeyShotXR.js"></script>
+  </head>
+  <body oncontextmenu="return false;">
+    <div id="KeyShotXR"></div>
+    <script type="text/javascript">
+      var ksxr = new KeyShotXR("images/2.78.360", {
+        imagePath: "images",
+        uCount: 18,
+        vCount: 1,
+        imageExtension: "jpg",
+        startFrame: [9, 0],
+        allowZoom: false,
+        allowFullscreen: true,
+        loadingIcon: "js/ks_logo.png"
+      });
+    </script>
+  </body>
+</html>
